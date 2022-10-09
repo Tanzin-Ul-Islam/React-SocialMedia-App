@@ -1,4 +1,4 @@
-.ContentUploadContainer{
+.ContentUploadContainer {
     width: 94%;
     background-color: white;
     margin: auto;
@@ -7,32 +7,42 @@
     overflow: hidden;
 }
 
-.contentWritingpart{
+.contentWritingpart {
     width: 29pc;
     margin-left: 10px;
     margin-top: 5px;
     height: 4vh;
 }
 
-.profileimage{
-    width:40px;
+.profileimage {
+    width: 40px;
     height: 40px;
     border-radius: 50%;
     margin-left: 10px;
-    
+
 }
 
-.icons{
-    width: 24px;
-    height: 24px;
-}
-.PostIcons{
+.icons {
     width: 24px;
     height: 24px;
 }
 
-.PostImages{
+.PostIcons {
+    width: 24px;
+    height: 24px;
+}
+
+.PostImages {
     width: 80%;
     height: 450px;
     border-radius: 10px;
+}
+
+.upload-section {
+    padding: 10px;
+    height: 50px;
+    width: 90%;
+    border-radius: 10px;
+    border: 1px solid blue;
+    position: relative;
 }

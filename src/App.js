@@ -5,6 +5,7 @@ import LeftContainer from './Component/LeftContainer/LeftContainer';
 import RightContainer from './Component/RightContainer/RightContainer';
 import ContentPost from './Component/ContentPost/ContentPost'
 import Post from './Component/post/Post'
+import UserPost from './Component/UserPost/UserPost';
 function App() {
   return (
     <div className="App">
@@ -17,10 +18,11 @@ function App() {
               <Route exact path="/">
                 <Post />
               </Route>
-            </Switch>
-            <Switch>
               <Route exact path="/create-post">
                 <ContentPost />
+              </Route>
+              <Route exact path="/user-post">
+                <UserPost />
               </Route>
             </Switch>
           </div>
