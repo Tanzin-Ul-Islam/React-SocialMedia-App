@@ -29,7 +29,6 @@ function App() {
           <RightContainer />
         </div>
       </div>
-
     </div>
   );
 }

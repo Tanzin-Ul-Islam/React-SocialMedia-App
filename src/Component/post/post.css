@@ -1,5 +1,5 @@
 .SubPostContainer{
-    width: 93%;
+    width: 94%;
     background-color: white;
     margin-top: 20px;
     margin-left: 20px;
@@ -45,4 +45,8 @@
     cursor: pointer;
     padding-left: 40px;
     padding-right: 40px;
+}
+
+.fa{
+    transform: rotateZ(180deg);
 }
