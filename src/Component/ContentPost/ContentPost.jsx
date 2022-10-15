@@ -20,7 +20,6 @@ export default function ContentPost() {
                     </div>
                 </div>
                 <input type="file" id="image" hidden />
-
                 <div style={{ alignItems: "center", padding: 10, }}>
                     <div style={{ margin: '11px' }}>
                         <textarea class="form-control" rows="3" placeholder='Write your thoughts..'></textarea>

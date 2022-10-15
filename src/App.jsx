@@ -4,6 +4,9 @@ import Navbar from './Component/Navbar/Navbar';
 import ContentPost from './Component/ContentPost/ContentPost'
 import Home from './Pages/Home/Home';
 import Profile from './Pages/Profile/Profile';
+import AddPost from './Pages/AddPost/AddPost';
+import UpdatePost from './Pages/UpdatePost/UpdatePost';
+import PostDetails from './Pages/PostDetails/PostDetails';
 
 import Favourites from './Pages/Favourites/Favourites';
 function App() {
@@ -16,14 +19,20 @@ function App() {
             <Route exact path="/">
               <Home />
             </Route>
-            <Route exact path="/create-post">
-              <ContentPost />
+            <Route exact path="/add-post">
+              <AddPost />
+            </Route>
+            <Route exact path="/update-post/:id">
+              <UpdatePost />
             </Route>
             <Route exact path="/profile/:id">
               <Profile />
             </Route>
             <Route exact path="/favourite-post">
               <Favourites />
+            </Route>
+            <Route exact path="/post/:id">
+              <PostDetails />
             </Route>
           </Switch>
         </div>

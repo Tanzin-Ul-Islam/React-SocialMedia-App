@@ -25,7 +25,7 @@ export default function Navbar() {
                         <img src={`${Profileimage}`} className="ProfileImage" data-bs-toggle="dropdown" aria-expanded="false" style={{ cursor: 'pointer' }} />
                         <ul class="dropdown-menu">
                             <li><Link class="dropdown-item" to={"/profile/" + 1}>Profile</Link></li>
-                            <li><Link class="dropdown-item" to="/user-post">Add Posts</Link></li>
+                            <li><Link class="dropdown-item" to="/add-post">Add Posts</Link></li>
                             <li><Link class="dropdown-item" to="/favourite-post">Favourites</Link></li>
                             <li><a class="dropdown-item" href="#">Logout</a></li>
                         </ul>
