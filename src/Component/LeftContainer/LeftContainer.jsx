@@ -6,7 +6,7 @@ import image2 from "../../images/image2.jpg";
 export default function LeftContainer() {
   return (
     <div className='Leftbar'>
-      <div className='NotificationsContainer' style={{padding: "5px"}}>
+      {/* <div className='NotificationsContainer' style={{padding: "5px"}}>
         <div style={{ display: 'flex', justifyContent: 'space-around' }}>
           <p style={{ marginLeft: "-14px" }}>Notifications</p>
           <p style={{ color: "#aaa", marginLeft: "40px" }}>See all</p>
@@ -41,11 +41,11 @@ export default function LeftContainer() {
           <p style={{ marginLeft: "5px", color: "#aaa", fontSize: 13, width: "120px", textAlign: "start" }}>Madan like your post</p>
           <img src={`${image1}`} className="likeimage" alt="" />
         </div>
-      </div>
+      </div> */}
       <div className='NotificationsContainer'>
         <div style={{ display: 'flex', justifyContent: 'space-around' }}>
-          <p style={{ marginLeft: "-20px" }}>Explore</p>
-          <p style={{ color: "#aaa", marginLeft: "40px" }}>See all</p>
+          <h6 style={{ marginLeft: "-30px", marginTop:'5px' }}>Explore</h6>
+          <p style={{ color: "#aaa", marginLeft: "40px" }}></p>
         </div>
         <div>
           <img src={`${image1}`} className="exploreimage" alt="" />

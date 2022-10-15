@@ -3,8 +3,9 @@
     width: 100%;
     margin: auto;
     justify-content: space-between;
-    background-color: white;
+    background-color: #ffffff;
     position: fixed;
+    z-index: 1;
 }
 .searchInputContainer{
     display: flex;

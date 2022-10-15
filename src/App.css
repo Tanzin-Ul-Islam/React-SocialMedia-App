@@ -48,7 +48,3 @@
   display: flex;
   justify-content: space-between;
 }
-.mainPostContainer{
-  flex: 3;
-  margin-top: 60px;
-}

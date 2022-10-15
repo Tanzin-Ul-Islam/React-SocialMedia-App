@@ -10,7 +10,7 @@ import addFriends from "../../images/add-user.png"
 export default function RightContainer() {
   return (
     <div className='rightbar'>
-      <div className='rightcontainer2' style={{padding: "5px"}}>
+      <div className='rightcontainer2' style={{ padding: "5px" }}>
         <h6 style={{ textAlign: "start", marginLeft: "10px" }}>Suggested for you</h6>
         <div style={{ marginTop: "10px" }}>
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
@@ -55,6 +55,50 @@ export default function RightContainer() {
           </div>
         </div>
       </div>
+      <div className='rightcontainer' style={{ padding: "5px", overflowX: 'hidden' }}>
+        <h6 style={{ textAlign: "start", marginLeft: "10px" }}>Categories</h6>
+        <div className='row' style={{ paddingRight: "40px" }}>
+          <div className='col-sm-3'>
+            <h5><span class="badge bg-primary">Travel</span></h5>
+          </div>
+          <div className='col-sm-3'>
+            <h5><span class="badge bg-primary">Sports</span></h5>
+          </div>
+          <div className='col-sm-3'>
+            <h5><span class="badge bg-primary">Food</span></h5>
+          </div>
+          <div className='col-sm-3'>
+            <h5><span class="badge bg-primary">Shopping</span></h5>
+          </div>
+          <div className='col-sm-3'>
+            <h5><span class="badge bg-primary">Space</span></h5>
+          </div>
+        </div>
+      </div>
+
+      {/* <div class="card" style={{ width: "20rem",  overflowX:'hidden' }}>
+        <div class="card-body" style={{paddingRight:"50px"}}>
+          <h5 class="card-title">Categories</h5>
+          <div className='row'>
+            <div className='col-sm-3'>
+              <h5><span class="badge bg-primary">Travel</span></h5>
+            </div>
+            <div className='col-sm-3'>
+              <h5><span class="badge bg-primary">Sports</span></h5>
+            </div>
+            <div className='col-sm-3'>
+              <h5><span class="badge bg-primary">Food</span></h5>
+            </div>
+            <div className='col-sm-3'>
+              <h5><span class="badge bg-primary">Shopping</span></h5>
+            </div>
+            <div className='col-sm-3'>
+              <h5><span class="badge bg-primary">Space</span></h5>
+            </div>
+          </div>
+        </div>
+      </div> */}
+
     </div>
   )
 }

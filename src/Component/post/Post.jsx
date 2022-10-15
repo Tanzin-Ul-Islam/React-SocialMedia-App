@@ -4,14 +4,19 @@ import ProfileImage from "../../images/profile.png"
 import image4 from "../../images/image5.jpg";
 export default function Post() {
     let [comment, setComment] = useState(false);
+    let [isFavourite, setIsFavourite] = useState(true);
     return (
 
         <div className='SubPostContainer'>
             <div>
-                <div style={{ display: 'flex', alignItems: "center", marginTop:"10px"}}>
-                    <img src={`${ProfileImage}`} className="PostImage" alt="" />
-                    <div>
-                        <p style={{ marginLeft: '5px', textAlign: "start" }}>Suman</p>
+                <div>
+                    <div className='row'>
+                        <div className='col-sm' style={{ marginLeft: '15px', marginTop: "5px" }}>
+                            <span style={{ float: 'left' }}><img src={`${ProfileImage}`} className="PostImage" alt="" /><br /> <span style={{marginLeft: '5px'}}><b>Suman</b></span></span>
+                        </div>
+                        <div className='col-sm' style={{ padding: '15px' }}>
+                            <i class="fa-solid fa-heart fa-lg" style={{ float: 'right', color: !isFavourite ? '#bbbbbb' : '#ff627d' }} onClick={()=>{setIsFavourite(!isFavourite)}}></i>
+                        </div>
                     </div>
                 </div>
                 <p style={{ textAlign: 'start', width: "96%", marginLeft: 20, marginTop: 0 }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, ab accusantium. Veniam eveniet magni.....</p>
