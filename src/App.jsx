@@ -1,14 +1,14 @@
 import './App.css'
 import { Switch, Route } from 'react-router-dom';
 import Navbar from './Component/Navbar/Navbar';
-import ContentPost from './Component/ContentPost/ContentPost'
 import Home from './Pages/Home/Home';
 import Profile from './Pages/Profile/Profile';
 import AddPost from './Pages/AddPost/AddPost';
 import UpdatePost from './Pages/UpdatePost/UpdatePost';
 import PostDetails from './Pages/PostDetails/PostDetails';
-
 import Favourites from './Pages/Favourites/Favourites';
+import Friends from './Pages/Friends/Friends';
+
 function App() {
   return (
     <div className="App">
@@ -33,6 +33,9 @@ function App() {
             </Route>
             <Route exact path="/post/:id">
               <PostDetails />
+            </Route>
+            <Route exact path="/friends">
+              <Friends/>
             </Route>
           </Switch>
         </div>

@@ -1,6 +1,7 @@
 import React from 'react'
 import './Profile.css'
 import imageA from '../../images/designer-1.jpg'
+import { Link } from "react-router-dom"
 export default function Profile() {
     return (
         <div className='mainPostContainer'>
@@ -29,7 +30,7 @@ export default function Profile() {
                     </div>
                     <hr />
                     <div className="row mt-4">
-                        <div className='col-sm-3 mb-5'>
+                        <div className='col-sm-3 mb-5' style={{ backgroundColor: '#ebebeb', padding: '10px' }}>
                             <img src={imageA} height={'250px'} width={"200px"} />
                             <div className='row'>
                                 <div className='col-sm-6' style={{ cursor: "pointer" }}>
@@ -39,8 +40,16 @@ export default function Profile() {
                                     <p><i class="fa-solid fa-thumbs-up fa"></i> 100</p>
                                 </div>
                             </div>
+                            <div className='row'>
+                                <div className='col-sm-6'>
+                                    <Link to={"/update-post/" + 1} className='btn btn-primary btn-sm'>Update</Link>
+                                </div>
+                                <div className='col-sm-6'>
+                                    <button className='btn btn-warning btn-sm'>Delete</button>
+                                </div>
+                            </div>
                         </div>
-                        <div className='col-sm-3 mb-5'>
+                        <div className='col-sm-3 mb-5' style={{ backgroundColor: '#ebebeb', padding: '10px' }}>
                             <img src={imageA} height={'250px'} width={"200px"} />
                             <div className='row'>
                                 <div className='col-sm-6' style={{ cursor: "pointer" }}>
@@ -50,8 +59,16 @@ export default function Profile() {
                                     <p><i class="fa-solid fa-thumbs-up fa"></i> 100</p>
                                 </div>
                             </div>
+                            <div className='row'>
+                                <div className='col-sm-6'>
+                                    <Link to={"/update-post/" + 1} className='btn btn-primary btn-sm'>Update</Link>
+                                </div>
+                                <div className='col-sm-6'>
+                                    <button className='btn btn-warning btn-sm'>Delete</button>
+                                </div>
+                            </div>
                         </div>
-                        <div className='col-sm-3 mb-5'>
+                        <div className='col-sm-3 mb-5' style={{ backgroundColor: '#ebebeb', padding: '10px' }}>
                             <img src={imageA} height={'250px'} width={"200px"} />
                             <div className='row'>
                                 <div className='col-sm-6' style={{ cursor: "pointer" }}>
@@ -61,8 +78,16 @@ export default function Profile() {
                                     <p><i class="fa-solid fa-thumbs-up fa"></i> 100</p>
                                 </div>
                             </div>
+                            <div className='row'>
+                                <div className='col-sm-6'>
+                                    <Link to={"/update-post/" + 1} className='btn btn-primary btn-sm'>Update</Link>
+                                </div>
+                                <div className='col-sm-6'>
+                                    <button className='btn btn-warning btn-sm'>Delete</button>
+                                </div>
+                            </div>
                         </div>
-                        <div className='col-sm-3 mb-5'>
+                        <div className='col-sm-3 mb-5' style={{ backgroundColor: '#ebebeb', padding: '10px' }}>
                             <img src={imageA} height={'250px'} width={"200px"} />
                             <div className='row'>
                                 <div className='col-sm-6' style={{ cursor: "pointer" }}>
@@ -70,6 +95,14 @@ export default function Profile() {
                                 </div>
                                 <div className='col-sm-6' style={{ cursor: "pointer" }}>
                                     <p><i class="fa-solid fa-thumbs-up fa"></i> 100</p>
+                                </div>
+                            </div>
+                            <div className='row'>
+                                <div className='col-sm-6'>
+                                    <Link to={"/update-post/" + 1} className='btn btn-primary btn-sm'>Update</Link>
+                                </div>
+                                <div className='col-sm-6'>
+                                    <button className='btn btn-warning btn-sm'>Delete</button>
                                 </div>
                             </div>
                         </div>

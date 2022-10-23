@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './PostDetails.css'
 import imageA from '../../images/designer-1.jpg'
+import ProfileImage from '../../images/designer-1.jpg'
 export default function PostDetails() {
     let [comment, setComment] = useState(false);
     let [isFavourite, setIsFavourite] = useState(true);
@@ -35,6 +36,49 @@ export default function PostDetails() {
                                 </div>
                             </div>
                             <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
+
+                            <div style={{ display: "flex", alignItems: "center", padding: '3px' }}>
+                                <img src={`${ProfileImage}`} className="profileimage" alt="" />
+                                <input type="text" class="form-control m-2" placeholder="write your thoughts" />
+                            </div>
+
+
+                            <div class="card" style={{
+                                width: '100%', height: '150px', overflow: 'hidden',
+                                overflowY: 'scroll'
+                            }}>
+                                <div class="card-body">
+                                    <div>
+                                        <div className="row mb-3">
+                                            <div className='col-sm-3'>
+                                                <img src={`${ProfileImage}`} className="profileimage mt-4" />
+                                            </div> &ensp;
+                                            <div className='col-sm-9' style={{ backgroundColor: '#dbd9d9', padding: "10px", marginLeft: '-34px', marginBottom: '4px' }}>
+                                                <p style={{ marginBottom: '5px', marginTop: '5px', float: 'left' }}>Loremipsum is a text editor Loremipsum is a text editorLoremipsum is a text editorLoremipsum is a text editor Loremipsum is a text editor .</p>
+                                            </div>
+                                        </div>
+                                        <div className="row mb-3">
+                                            <div className='col-sm-3'>
+                                                <img src={`${ProfileImage}`} className="profileimage mt-4" />
+                                            </div> &ensp;
+                                            <div className='col-sm-9' style={{ backgroundColor: '#dbd9d9', padding: "10px", marginLeft: '-34px', marginBottom: '4px' }}>
+                                                <p style={{ marginBottom: '5px', marginTop: '5px', float: 'left' }}>Loremipsum is a text editor Loremipsum is a text editorLoremipsum is a text editorLoremipsum is a text editor Loremipsum is a text editor .</p>
+                                            </div>
+                                        </div>
+                                        <div className="row mb-3">
+                                            <div className='col-sm-3'>
+                                                <img src={`${ProfileImage}`} className="profileimage mt-4" />
+                                            </div> &ensp;
+                                            <div className='col-sm-9' style={{ backgroundColor: '#dbd9d9', padding: "10px", marginLeft: '-34px', marginBottom: '4px' }}>
+                                                <p style={{ marginBottom: '5px', marginTop: '5px', float: 'left' }}>Loremipsum is a text editor Loremipsum is a text editorLoremipsum is a text editorLoremipsum is a text editor Loremipsum is a text editor .</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
                         </div>
                     </div>
                 </div>

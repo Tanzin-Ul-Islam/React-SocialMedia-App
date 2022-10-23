@@ -27,6 +27,7 @@ export default function Navbar() {
                             <li><Link class="dropdown-item" to={"/profile/" + 1}>Profile</Link></li>
                             <li><Link class="dropdown-item" to="/add-post">Add Posts</Link></li>
                             <li><Link class="dropdown-item" to="/favourite-post">Favourites</Link></li>
+                            <li><Link class="dropdown-item" to="/friends">Friends</Link></li>
                             <li><a class="dropdown-item" href="#">Logout</a></li>
                         </ul>
                     </div>

@@ -32,7 +32,7 @@ export default function UpdatePost() {
                         </div>
                         <div className='row'>
                             <div className='col-sm'>
-                                <button style={{ marginTop: '30px', paddingLeft: "20px", paddingRight: "20px", paddingTop: 6, paddingBottom: 6, border: "none", backgroundColor: "black", color: "white", borderRadius: "5px", cursor: "pointer", float: 'right', margin: '10px' }}>Post</button>
+                                <button style={{ marginTop: '30px', paddingLeft: "20px", paddingRight: "20px", paddingTop: 6, paddingBottom: 6, border: "none", backgroundColor: "black", color: "white", borderRadius: "5px", cursor: "pointer", float: 'right', margin: '10px' }}>Update</button>
                             </div>
                         </div>
                     </div>
