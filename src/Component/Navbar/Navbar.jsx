@@ -18,7 +18,9 @@ export default function Navbar() {
                     <input type="text" className='searchInput' placeholder='search your friends' name="" id="" />
                 </div>
             </div>
+
             <div style={{ marginTop: '10px', paddingRight: '10px' }}>
+                <Link to="/login" className='btn btn-primary btn-sm'>Login/Register</Link>
                 <div style={{ display: 'flex' }}>
                     <p style={{ marginLeft: '5px' }}>Welcome Suman</p>
                     <div class="dropdown">
@@ -30,6 +32,7 @@ export default function Navbar() {
                             <li><Link class="dropdown-item" to="/friends">Friends</Link></li>
                             <li><a class="dropdown-item" href="#">Logout</a></li>
                         </ul>
+
                     </div>
 
                 </div>

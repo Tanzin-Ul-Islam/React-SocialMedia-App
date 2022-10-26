@@ -22,7 +22,7 @@ export default function Post() {
                     </div>
                 </div>
                 <p style={{ textAlign: 'start', width: "96%", marginLeft: 20, marginTop: 0 }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, ab accusantium. Veniam eveniet magni.....</p>
-                <Link to={"/post/"+2}><img src={`${image4}`} className="PostImages" alt="" /></Link>
+                <Link to={"/post/" + 2}><img src={`${image4}`} className="PostImages" alt="" /></Link>
                 <div style={{ display: "flex" }} className="m-3">
                     <div style={{ display: "flex", marginLeft: "10px" }}>
                         <div style={{ display: "flex", alignItems: "center", cursor: "pointer" }}>
@@ -43,7 +43,26 @@ export default function Post() {
                             <input type="text" class="form-control m-2" placeholder="write your thoughts" />
                         </div>
 
-                        <div>
+                        <div style={{
+                           height: '150px', overflow: 'hidden',
+                           overflowY: 'scroll'
+                        }}>
+                            <div className="row mb-3">
+                                <div className='col-sm-3'>
+                                    <img src={`${ProfileImage}`} className="profileimage" alt="" />
+                                </div> &ensp;
+                                <div className='col-sm-9' style={{ backgroundColor: '#dbd9d9', padding: "10px", marginLeft: '-34px', marginBottom: '4px' }}>
+                                    <p style={{ marginBottom: '5px', marginTop: '5px', float: 'left' }}>Loremipsum is a text editor Loremipsum is a text editorLoremipsum is a text editorLoremipsum is a text editor Loremipsum is a text editor .</p>
+                                </div>
+                            </div>
+                            <div className="row mb-3">
+                                <div className='col-sm-3'>
+                                    <img src={`${ProfileImage}`} className="profileimage" alt="" />
+                                </div> &ensp;
+                                <div className='col-sm-9' style={{ backgroundColor: '#dbd9d9', padding: "10px", marginLeft: '-34px', marginBottom: '4px' }}>
+                                    <p style={{ marginBottom: '5px', marginTop: '5px', float: 'left' }}>Loremipsum is a text editor Loremipsum is a text editorLoremipsum is a text editorLoremipsum is a text editor Loremipsum is a text editor .</p>
+                                </div>
+                            </div>
                             <div className="row mb-3">
                                 <div className='col-sm-3'>
                                     <img src={`${ProfileImage}`} className="profileimage" alt="" />

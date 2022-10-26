@@ -8,6 +8,8 @@ import UpdatePost from './Pages/UpdatePost/UpdatePost';
 import PostDetails from './Pages/PostDetails/PostDetails';
 import Favourites from './Pages/Favourites/Favourites';
 import Friends from './Pages/Friends/Friends';
+import Login from './Pages/Login/Login';
+import Register from './Pages/Register/Register';
 
 function App() {
   return (
@@ -16,6 +18,12 @@ function App() {
         <Navbar />
         <div className='ComponentContainer'>
           <Switch>
+            <Route exact path="/login">
+              <Login />
+            </Route>
+            <Route exact path="/register">
+              <Register />
+            </Route>
             <Route exact path="/">
               <Home />
             </Route>
@@ -35,7 +43,7 @@ function App() {
               <PostDetails />
             </Route>
             <Route exact path="/friends">
-              <Friends/>
+              <Friends />
             </Route>
           </Switch>
         </div>
